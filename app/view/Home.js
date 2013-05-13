@@ -13,13 +13,17 @@ Ext.define('MyApp.view.Home', {
         defaults: {
             styleHtmlContent: true
         },
-        items: [
-            {
-                xtype: 'about'
-            },
-            {
-                xtype: 'imagex'
-            }
+				items: 
+				[
+        	{
+						xtype: 'weather'
+       		},
+          {
+						xtype: 'about'
+  				},
+  				{
+      			xtype: 'imagex'
+    			}
         ]
     }
 });

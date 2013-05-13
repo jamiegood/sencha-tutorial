@@ -58,6 +58,7 @@ Ext.application({
 
     stores: [
         'Blog'
+				,'Weather'
     ],
 
     views: [
@@ -65,6 +66,7 @@ Ext.application({
         ,'Image'
         ,'Home'
         ,'About'
+				,'Weather'
     ],
 
     viewport: {
