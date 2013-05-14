@@ -23,6 +23,10 @@ Ext.Loader.setPath({
 Ext.application({
     name: 'MyApp',
 
+    weatherAPI: 'http://api.openweathermap.org/data/2.5/weather?q=',
+
+    defaultCountry: 'Dublin,ie',
+
     aboutPages: [
         {
             title: 'Overview',

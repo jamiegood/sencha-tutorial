@@ -2,7 +2,7 @@ Ext.define('MyApp.model.Weather', {
     extend: 'Ext.data.Model',
 
     config: {
-        fields: ['name', 'main', 'wind']
+        fields: ['name', 'main', 'country', 'sys']
     }
 });/**
  * Created with JetBrains PhpStorm.

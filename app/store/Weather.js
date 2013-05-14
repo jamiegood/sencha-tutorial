@@ -4,12 +4,11 @@ Ext.define('MyApp.store.Weather', {
     config: {
         model: 'MyApp.model.Weather',
 
-        autoLoad: true,
+        //autoLoad: true,
         pageSize: 10,
 
         proxy: {
             type: 'jsonp',
-            url: 'http://api.openweathermap.org/data/2.5/weather?q=Dublin,ie',
             reader: {
                 type: 'json'
             }
