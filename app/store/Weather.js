@@ -2,7 +2,8 @@ Ext.define('MyApp.store.Weather', {
     extend: 'Ext.data.Store',
 
     config: {
-        fields: ['name', 'main', 'wind'],
+        model: 'MyApp.model.Weather',
+
         autoLoad: true,
         pageSize: 10,
 
@@ -15,3 +16,8 @@ Ext.define('MyApp.store.Weather', {
         }
     }
 });
+
+
+/*
+ //Ext.StoreMgr.get('MyJsonPStore')
+ */

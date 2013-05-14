@@ -4,7 +4,8 @@ Ext.define('MyApp.view.Home', {
 
     requires: [
         'MyApp.view.Image',
-        'Ext.data.proxy.JsonP'
+        'Ext.data.proxy.JsonP',
+        'MyApp.store.Weather'
     ],
 
     config: {

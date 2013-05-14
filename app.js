@@ -58,15 +58,19 @@ Ext.application({
 
     stores: [
         'Blog'
-				,'Weather'
+        ,'Weather'
     ],
 
     views: [
         'Main'
         ,'Image'
-        ,'Home'
-        ,'About'
-				,'Weather'
+        , 'Home'
+        , 'About'
+        ,'Weather'
+    ],
+
+    models: [
+        'Weather'
     ],
 
     viewport: {

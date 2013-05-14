@@ -7,7 +7,7 @@ Ext.define('MyApp.view.Weather', {
         iconCls: 'home',
         title: 'Weather',
         store: 'Weather',
-        itemTpl: [ '{wind}' ]
+        itemTpl: [ '{name}', '{wind}' ]
 
     },
     detailCard: {
