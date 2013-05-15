@@ -100,7 +100,7 @@ Ext.application({
 
     launch: function() {
         // Destroy the #appLoadingIndicator element
-        Ext.fly('appLoadingIndicator').destroy();
+        //Ext.fly('appLoadingIndicator').destroy();
 
         Ext.Viewport.add({ xtype: 'home' });
         //creates a full screen tappable image

@@ -4,6 +4,7 @@ Ext.define('MyApp.view.Weather', {
     xtype: 'weather',
 
     config: {
+        mask: ({ message: 'loading...' }),
         iconCls: 'home',
         title: 'Weather',
         store: 'Weather',
@@ -13,8 +14,8 @@ Ext.define('MyApp.view.Weather', {
         itemTpl: Ext.create('Ext.XTemplate',
             '<img src="{profile_image_url}" />',
             '<div class="tweet">',
-            '<h2>{name}, {[this.formatDetails(values.sys.country)]}</h2>',
-            '<p>Temperature: {[this.formatDetails(values.main.temp)]}</p>',
+            '<h2>{name}, {[values.sys.country]}</h2>',
+            '<p>Temperature: {[values.main.temp]}</p>',
             '</div>',
             {
                 formatDetails: function(obj) {
@@ -38,5 +39,6 @@ Ext.define('MyApp.view.Weather', {
     this.getStore().load({
         url: MyApp.app.weatherAPI + MyApp.app.defaultCountry
     });
+       // Ext.fly('appLoadingIndicator').destroy();
 }
 });
